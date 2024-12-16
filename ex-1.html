@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -16,13 +17,24 @@
 <script type="text/babel">
 const Movie = ({name, year, image}) => {
     return (
-       <div className="movie">
-           <img src={image} alt={"name of movie" + name}/>
-           <h1>{name}</h1>
-           <p>{year}</p>
-       </div>
+         <div className="movie">
+           <img className="movieImg" src={image} alt={"image of movie" + name}/>
+           <h1 className="movieName">{name}</h1>
+           <p className="movieYear">{year}</p>
+        </div>
     );
 };
+
+const content = (
+    <div className="content">
+        <Movie name="Работа без авторства" year={2018} image="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/5884c004-d733-418e-8e94-d50759eac02e/600x900"/>
+        <Movie name="Я, снова я и Ирен" year={2000} image="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/5ac0f91b-daa2-4f8d-88e5-c65b8fd83a35/600x900"/>
+        <Movie name="Вечное сияние чистого разума" year={2004} image="https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/6cd71c8d-c906-4430-83a2-60f31c345954/600x900"/>
+    </div>
+)
+
+ReactDOM.render(content, document.getElementById('app'));
+
 </script>
 
 </body>
