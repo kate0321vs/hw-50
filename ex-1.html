@@ -13,7 +13,17 @@
 <body>
 <div id="app"></div>
 
-<script type="text/babel"></script>
+<script type="text/babel">
+const Movie = ({name, year, image}) => {
+    return (
+       <div className="movie">
+           <img src={image} alt={"name of movie" + name}/>
+           <h1>{name}</h1>
+           <p>{year}</p>
+       </div>
+    );
+};
+</script>
 
 </body>
 </html>
