@@ -4,6 +4,7 @@ body {
     max-width: 1300px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    background-color: rgb(240, 240, 240);
 }
 
 .content {
@@ -84,6 +85,7 @@ body {
     background-color: transparent;
     padding: 10px 15px;
     font-weight: 500;
+    margin: 15px;
 }
 
 .headerBtn:hover {
@@ -136,6 +138,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 20px;
 }
 
 .titleText {
@@ -169,6 +172,63 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 30px;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.marketingCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 250px;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.cardsTitle {
+    text-align: center;
+    margin: 70px 0 40px;
+    font-size: 28px;
+}
+
+.cardTitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cardTitle::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url("https://i.pinimg.com/474x/4a/1c/37/4a1c3765811adad52887e325da92bb16.jpg");
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.cardText {
+    max-width: 200px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    padding: 20px 0;
 }
 
 

@@ -70,13 +70,43 @@ const MainContent  = ({image, title, description}) => {
     );
 };
 
+const MarketingCard = ({title, text}) => {
+    return (
+        <div className="marketingCard">
+            <h4 className="cardTitle">{title}</h4>
+            <p className="cardText">{text}</p>
+        </div>
+    );
+};
+
+const Footer = ({text}) => {
+    return (
+        <div className="footer">
+            <p className="footerText">{text}</p>
+            <p></p>
+        </div>
+    );
+};
+
 const allContent = (
-        <div className="allContent">
+    <div className="allContent">
         <Header image="https://livedemo00.template-help.com/wt_51695/images/logo-default-399x82.png"/>
         <div className="mainContainer"><Sidebar/>
             <MainContent image="https://livedemo00.template-help.com/wt_51695/images/home-01-654x515.png"
-            title="Marketing That Generates Results" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"/>
+                         title="Marketing That Generates Results"
+                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"/>
         </div>
+        <h2 className="cardsTitle">Professional Marketing Solutions
+        </h2>
+        <div className="cardsContainer">
+            <MarketingCard title="Copywriting"
+                           text="Our copywriters can provide your website with proper texts."/>
+            <MarketingCard title="Analytics & Research"
+                           text="A&R services of LeadGen guarantee successful marketing results."/>
+            <MarketingCard title="Sales Growth"
+                           text="Our innovative marketing tools provide great sales growth."/>
+        </div>
+        <Footer text="© 2024. All Rights Reserved. Design by TemplateMonster"/>
     </div>
 );
 
