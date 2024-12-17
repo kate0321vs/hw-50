@@ -45,6 +45,7 @@ body {
 
 .logoImg {
     max-width: 200px;
+    padding-left: 40px;
 }
 
 .header {
@@ -61,7 +62,7 @@ body {
     list-style: none;
 }
 
-.activeLink {
+.headerActiveLink {
     text-decoration: none;
     color: #007bff;
     font-weight: 500;
@@ -89,4 +90,27 @@ body {
     background-color: rgb(234, 76, 134);
     color: #fff;
 }
+
+.sidebarNavList {
+    font-size: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.sidebarLink {
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    padding: 20px 0 20px 20px;
+    display: block;
+    background-color: #007bff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.sidebarLink:hover {
+    background-color: rgba(0, 123, 255, 0.63);
+}
+
 

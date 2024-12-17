@@ -27,7 +27,7 @@ const Header = ({image}) => {
             </div>
             <nav className="headerNav">
                 <ul className="headerNavList">
-                    <li><a className="activeLink" href="#">Home</a></li>
+                    <li><a className="headerActiveLink" href="#">Home</a></li>
                     <li><a className="headerLink" href="#">About</a></li>
                     <li><a className="headerLink" href="#">Typography</a></li>
                     <li><a className="headerLink" href="#">Contacts</a></li>
@@ -40,11 +40,32 @@ const Header = ({image}) => {
     );
 };
 
-const headerContent = (
-    <Header image="https://livedemo00.template-help.com/wt_51695/images/logo-default-399x82.png"/>
+const Sidebar  = () => {
+    return (
+        <div className="sidebar">
+            <ul className="sidebarNavList">
+                <li className="sidebarLi"><a className="sidebarLink" href="#">Our Services</a></li>
+                <li className="sidebarLi"><a className="sidebarLink" href="#">Printing Solutions</a></li>
+                <li className="sidebarLi"><a className="sidebarLink" href="#">Custom Orders</a></li>
+                <li className="sidebarLi"><a className="sidebarLink" href="#">Paper & Materials</a></li>
+                <li className="sidebarLi"><a className="sidebarLink" href="#">Design Templates</a></li>
+                <li className="sidebarLi"><a className="sidebarLink" href="#">Special Offers</a></li>
+                <li className="sidebarLi"><a className="sidebarLink" href="#">Popular Products</a></li>
+            </ul>
+        </div>
+    );
+};
+
+const allContent = (
+    <div className="allContent">
+      <Header image="https://livedemo00.template-help.com/wt_51695/images/logo-default-399x82.png"/>
+      <div><Sidebar/>
+      </div>
+    </div>
 );
 
-ReactDOM.render(headerContent, document.getElementById('app'));
+ReactDOM.render(allContent, document.getElementById('app'));
+
 
 </script>
 
