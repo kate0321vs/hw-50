@@ -1,7 +1,7 @@
 body {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1170px;
+    max-width: 1300px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 }
@@ -53,6 +53,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .headerNavList {
@@ -96,7 +97,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 300px;
+    width: 250px;
 }
 
 .sidebarLink {
@@ -111,6 +112,63 @@ body {
 
 .sidebarLink:hover {
     background-color: rgba(0, 123, 255, 0.63);
+}
+
+.mainContent {
+    display: flex;
+    justify-content:space-between;
+}
+
+.leftBlock {
+    max-width: 450px;
+}
+
+.mainImg {
+    max-width: 450px;
+    margin-top: 40px;
+}
+
+.rightBlock {
+    max-width: 460px;
+    background-color: rgba(0, 0, 0, 0.71);
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titleText {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.textText {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0 0 40px;
+}
+
+.mainBtn {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+    font-size: 14px;
+    border-radius: 25px;
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+}
+
+.mainBtn:hover {
+    background-color: rgb(234, 76, 134);
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
 }
 
 

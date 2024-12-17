@@ -56,11 +56,27 @@ const Sidebar  = () => {
     );
 };
 
+const MainContent  = ({image, title, description}) => {
+    return (
+        <div className="mainContent">
+            <div className="leftBlock"><img className="mainImg" src={image} alt="#"/></div>
+            <div className="rightBlock">
+                <h1 className="titleText">{title}</h1>
+                <p className="textText">{description}</p>
+                <button className="mainBtn" type="button">Get Checklist</button>
+            </div>
+
+        </div>
+    );
+};
+
 const allContent = (
-    <div className="allContent">
-      <Header image="https://livedemo00.template-help.com/wt_51695/images/logo-default-399x82.png"/>
-      <div><Sidebar/>
-      </div>
+        <div className="allContent">
+        <Header image="https://livedemo00.template-help.com/wt_51695/images/logo-default-399x82.png"/>
+        <div className="mainContainer"><Sidebar/>
+            <MainContent image="https://livedemo00.template-help.com/wt_51695/images/home-01-654x515.png"
+            title="Marketing That Generates Results" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"/>
+        </div>
     </div>
 );
 
