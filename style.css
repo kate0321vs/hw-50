@@ -1,6 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .content {
@@ -38,5 +41,52 @@ body {
     font-size: 16px;
     color: #ff6a00;
     margin-top: auto;
+}
+
+.logoImg {
+    max-width: 200px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.headerNavList {
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+    list-style: none;
+}
+
+.activeLink {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.headerLink {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.69);
+}
+
+.headerLink:hover {
+    border-bottom: 2px solid #007bff;
+}
+
+.headerBtn {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.headerBtn:hover {
+    border: 1px solid rgb(234, 76, 134);
+    background-color: rgb(234, 76, 134);
+    color: #fff;
 }
 
